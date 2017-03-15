@@ -11,16 +11,40 @@ namespace Task2
     /// </summary>
     public static class String
     {
-        public static string ConcatSortString(string value)
+        /// <summary>
+        /// Concats the sort string.
+        /// </summary>
+        /// <param name="value1">The value1.</param>
+        /// <param name="value2">The value2.</param>
+        /// <returns></returns>
+        public static string ConcatSortString(string value1, string value2)
         {
-            return ConcatSort(value);
+            return ConcatDistinctOrderBy(value1, value2);
         }
 
-        private static string ConcatSort(string value)
+        /// <summary>
+        /// Concats the distinct order by.
+        /// </summary>
+        /// <param name="value1">The value1.</param>
+        /// <param name="value2">The value2.</param>
+        /// <returns></returns>
+        /// <exception cref="System.ArgumentNullException">
+        /// value1
+        /// or
+        /// value2
+        /// </exception>
+        private static string ConcatDistinctOrderBy(string value1, string value2)
         {
-            if (value == null)
-                throw new ArgumentNullException(nameof(value));
-            return null;
+            if (value1 == null)
+                throw new ArgumentNullException(nameof(value1));
+
+            if (value2 == null)
+                throw new ArgumentNullException(nameof(value2));
+
+            string value = System.String.Concat(value1, value2);
+            string ca = new string(value.Where(c => (c >= 'a') && (c <= 'z')).Distinct().OrderBy(s => s).ToArray());
+            return ca;
         }
+
     }
 }
