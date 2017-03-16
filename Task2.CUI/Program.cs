@@ -8,6 +8,7 @@ namespace Task2.CUI
         {
             testConcatSortStrings("xyaabbbccccdefww", "xxxxyyyyabklmopq");
             testConcatSortStrings("abcdefghijklmnopqrstuvwxyz", "abcdefghijklmnopqrstuvwxyz");
+            testConcatSortStrings("abcdfghfgwxyz", "sfsz");
 
             Console.ReadLine();
         }
