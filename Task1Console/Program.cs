@@ -13,7 +13,7 @@ namespace Task1Console
         {
             int[] array = { -1, 50, -50, 1, 1 };
 
-            int? index = Task1.Array.FindMiddleIndex(array);
+            int index = ArrayHandler.FindMiddleIndex(array);
             Console.WriteLine(index);
         }
     }
