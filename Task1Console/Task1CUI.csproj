@@ -7,8 +7,8 @@
     <ProjectGuid>{69C1C764-BE3B-422E-9B1C-5576D024DC5B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Task1Console</RootNamespace>
-    <AssemblyName>Task1Console</AssemblyName>
+    <RootNamespace>Task1CUI</RootNamespace>
+    <AssemblyName>Task1CUI</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
