@@ -19,7 +19,7 @@ namespace Task2
         /// <param name="str0">The first string to concatenate. Allow chars in [a-z].</param>
         /// <param name="str1">The second string to concatenate. Allow chars in [a-z].</param>
         /// <returns>A sorted string that contains distinct elements from the source strings.</returns>
-        public static string ConcatSortString(string str0, string str1)
+        public static string ConcatSortStrings(string str0, string str1)
         {
             return ConcatDistinctOrderBy(str0, str1);
         }
