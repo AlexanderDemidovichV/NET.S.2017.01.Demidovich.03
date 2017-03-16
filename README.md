@@ -25,9 +25,11 @@ Task2:
 
 a = "xyaabbbccccdefww"
 b = "xxxxyyyyabklmopq"
+
 Longest(a, b) -> "abcdefklmopqwxy"
 
 a = "abcdefghijklmnopqrstuvwxyz"
+
 Longest(a, a) -> "abcdefghijklmnopqrstuvwxyz
 
 Task3:
@@ -37,7 +39,11 @@ Task3:
 Например.
 
 Insertion(8,15,0,0) ->9
+
 Insertion(0, 15, 30, 30) ->1073741824
+
 Insertion(0, 15, 0, 30) -> 15
+
 Insertion(15, -15, 0, 4) -> 31
+
 Insertion(15, int.MaxValue, 3, 5)->63
