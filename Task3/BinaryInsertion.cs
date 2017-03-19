@@ -23,7 +23,7 @@ namespace Task3
         /// <exception cref="System.ArgumentException"><paramref name="startIndex"/> is greater than <paramref name="endIndex"/></exception>
         /// <exception cref="System.ArgumentOutOfRangeException"><paramref name="startIndex"/> is negative or greater than 32 bits.
         /// <paramref name="endIndex"/> is negative or greater than 32 bits.</exception>
-        public static int BinaryInsertionIntegerIntoInteger(int number1, int number2, int startIndex, int endIndex)
+        public static int BinaryInsertionIntegerIntoInteger(int number1, int number2, byte startIndex, byte endIndex)
         {
             if (startIndex > endIndex)
                 throw new ArgumentException();
@@ -33,7 +33,7 @@ namespace Task3
             BitArray a = number1.ToBinary();
             BitArray b = number2.ToBinary();
 
-            for (int i = startIndex, j = 0; i <= endIndex; i++)
+            for (byte i = startIndex, j = 0; i <= endIndex; i++)
             {
                 a.Set(i, a.Get(i) | b.Get(j++));
             }

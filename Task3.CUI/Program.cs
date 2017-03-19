@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 
 namespace Task3.CUI
 {
@@ -11,11 +11,18 @@ namespace Task3.CUI
             testBinaryInsertionIntegerIntoInteger(0, 15, 0, 30);
             testBinaryInsertionIntegerIntoInteger(15, -15, 0, 4);
             testBinaryInsertionIntegerIntoInteger(15, int.MaxValue, 3, 5);
+            testBinaryInsertionIntegerIntoInteger(int.MaxValue, int.MaxValue, 3, 5);
+            testBinaryInsertionIntegerIntoInteger(15, 15, 1, 3);
+            testBinaryInsertionIntegerIntoInteger(15, 15, 1, 4);
+            testBinaryInsertionIntegerIntoInteger(15, -15, 0, 4);
+            testBinaryInsertionIntegerIntoInteger(15, -15, 1, 4);
+            testBinaryInsertionIntegerIntoInteger(-8, -15, 1, 4);
+
 
             Console.ReadLine();
         }
 
-        private static void testBinaryInsertionIntegerIntoInteger(int number1, int number2, int startIndex, int endIndex)
+        private static void testBinaryInsertionIntegerIntoInteger(int number1, int number2, byte startIndex, byte endIndex)
         {
             Console.WriteLine(BinaryInsertion.BinaryInsertionIntegerIntoInteger(number1, number2, startIndex, endIndex));
         }
