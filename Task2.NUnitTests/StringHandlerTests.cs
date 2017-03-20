@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace Task2.NUnitTests
 {
@@ -11,7 +6,7 @@ namespace Task2.NUnitTests
     {
         [TestCase("xyaabbbccccdefww", "xxxxyyyyabklmopq", Result = "abcdefklmopqwxy")]
         [TestCase("abcdefghijklmnopqrstuvwxyz", "abcdefghijklmnopqrstuvwxyz", Result = "abcdefghijklmnopqrstuvwxyz")]
-        public static string testFindMiddleIndex(string str0, string str1)
+        public static string TestFindMiddleIndex(string str0, string str1)
         {
             return StringHandler.ConcatSortStrings(str0, str1);
         }

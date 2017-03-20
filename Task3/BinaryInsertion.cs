@@ -23,7 +23,29 @@ namespace Task3
         /// <exception cref="System.ArgumentException"><paramref name="startIndex"/> is greater than <paramref name="endIndex"/></exception>
         /// <exception cref="System.ArgumentOutOfRangeException"><paramref name="startIndex"/> is negative or greater than 32 bits.
         /// <paramref name="endIndex"/> is negative or greater than 32 bits.</exception>
-        public static int BinaryInsertionIntegerIntoInteger(int number1, int number2, byte startIndex, byte endIndex)
+        public static int BinaryInsertionIntIntoInt(int number1, int number2, byte startIndex, byte endIndex)
+        {
+            return BinaryInsertionIntegerIntoInteger(number1, number2, startIndex, endIndex);
+        }
+
+        #endregion
+
+        #region Private Methods
+
+        /// <summary>
+        /// Inserts <paramref name="number2"/> in <paramref name="number1"/>
+        /// to the bit's position from <paramref name="startIndex"/> to <paramref name="endIndex"/>
+        /// </summary>
+        /// <param name="number1">The number1.</param>
+        /// <param name="number2">The integer to insert.</param>
+        /// <param name="startIndex">The zero-based index start position of the insertion.</param>
+        /// <param name="endIndex">The zero-based index end position of the insertion.</param>
+        /// <returns>A new integer that is equivalent to <paramref name="number1"/>, 
+        /// but with <paramref name="number2"/> inserted at bit's positions form <paramref name="startIndex"/> to <paramref name="endIndex"/>.</returns>
+        /// <exception cref="System.ArgumentException"><paramref name="startIndex"/> is greater than <paramref name="endIndex"/></exception>
+        /// <exception cref="System.ArgumentOutOfRangeException"><paramref name="startIndex"/> is negative or greater than 32 bits.
+        /// <paramref name="endIndex"/> is negative or greater than 32 bits.</exception>
+        private static int BinaryInsertionIntegerIntoInteger(int number1, int number2, byte startIndex, byte endIndex)
         {
             if (startIndex > endIndex)
                 throw new ArgumentException();
@@ -51,10 +73,6 @@ namespace Task3
                 throw;
             }
         }
-
-        #endregion
-
-        #region Private Methods
 
         /// <summary>
         /// Convert the number from decimal system into binary system.

@@ -20,7 +20,7 @@ namespace Task3.DDT
 
             var expected = Convert.ToString(TestContext.DataRow["ExpectedResult"]);
 
-            var actual = Convert.ToString(BinaryInsertion.BinaryInsertionIntegerIntoInteger(
+            var actual = Convert.ToString(BinaryInsertion.BinaryInsertionIntIntoInt(
                 Convert.ToInt32(TestContext.DataRow["number1"]),
                 Convert.ToInt32(TestContext.DataRow["number2"]),
                 Convert.ToByte(TestContext.DataRow["startIndex"]),
