@@ -5,11 +5,11 @@ Task1:
 
 Например.
 
-•    Для массива {1,2,3,4,3,2,1} функция вернет индекс 3, поскольку на 3-й
+>Для массива {1,2,3,4,3,2,1} функция вернет индекс 3, поскольку на 3-й
 позиции массива, суммы слева от индекса ({1,2,3}) и справа от индекса ({3,2, 1})
  равны 6.
  
-•    Для массива {1,100,50, -51,1,1} функция вернет индекс 1, поскольку на 1-й 
+>Для массива {1,100,50, -51,1,1} функция вернет индекс 1, поскольку на 1-й 
 позиции массива, суммы слева от индекса ({1}) и справа от индекса ({50, -51,1,1 }) 
 равны 1.
 
@@ -23,14 +23,12 @@ Task2:
 
 Например.
 
-a = "xyaabbbccccdefww"
-b = "xxxxyyyyabklmopq"
+>a = "xyaabbbccccdefww"
+>b = "xxxxyyyyabklmopq"
+>* Longest(a, b) -> "abcdefklmopqwxy"
 
-Longest(a, b) -> "abcdefklmopqwxy"
-
-a = "abcdefghijklmnopqrstuvwxyz"
-
-Longest(a, a) -> "abcdefghijklmnopqrstuvwxyz
+>a = "abcdefghijklmnopqrstuvwxyz"
+>* Longest(a, a) -> "abcdefghijklmnopqrstuvwxyz
 
 Task3:
 
@@ -38,12 +36,12 @@ Task3:
 
 Например.
 
-Insertion(8,15,0,0) ->9
+>* Insertion(8,15,0,0) ->9
 
-Insertion(0, 15, 30, 30) ->1073741824
+>* Insertion(0, 15, 30, 30) ->1073741824
 
-Insertion(0, 15, 0, 30) -> 15
+>* Insertion(0, 15, 0, 30) -> 15
 
-Insertion(15, -15, 0, 4) -> 31
+>* Insertion(15, -15, 0, 4) -> 31
 
-Insertion(15, int.MaxValue, 3, 5)->63
+>* Insertion(15, int.MaxValue, 3, 5)->63
